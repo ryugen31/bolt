@@ -32,9 +32,6 @@ img {
   font-size: 12px;
   padding: 14px 12px;
   text-decoration: none;
-}
-
-.btn_mintgreen {
   transition: background-color .3s;
 }
 
@@ -60,6 +57,10 @@ img {
   color: #7f7f7f;
   font-size: 50px;
   float: left;
+}
+
+.header__btn {
+  float: right;
 }
 
 /* ---------- main ---------- */
@@ -268,45 +269,15 @@ img {
 }
 
 
-/* --------------- sp_size(width=-767px) --------------- */
+/* --------------- pc_size(width=1200px-) --------------- */
 
-/* .header__btn {
-  display: none;
-} */
+@media screen and (min-width: 1200px) {
 
-  .header__hamburger {
-    float: right;
-  }
-
-  .btn_hamburger {
-    border: 1px solid #ddd;
-    border-radius: 4px;
-    color: #c0c0c0;
-    padding: 10px 15px;
-  }
-  
-
-
-/* --------------- tab_size(width=768px-1199px) --------------- */
-
-@media (min-width: 768px) {
+  /* ---------- header ---------- */
 
   .header__hamburger {
     display: none;
   }
-
-  .header__btn {
-    float: right;
-  }
-
-
-}
-
-
-/* --------------- pc_size(width=1200px-) --------------- */
-
-@media (min-width: 1200px) {
-
 
   /* ---------- article ---------- */
 
@@ -328,5 +299,198 @@ img {
     background-color: #fff;
   }
   
+}
 
+
+/* --------------- tab_size(width=768px-1199px) --------------- */
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  
+  .inner {
+    width: 97%;
+  }
+  
+  /* ---------- header ---------- */
+
+  .header__hamburger {
+    display: none;
+  }
+
+  /* ---------- topWrapper ---------- */
+
+  .concept__inner {
+    padding-bottom: 25px;
+  }
+
+  /* ---------- section_concept ---------- */
+
+  .concept__content_left {
+    float: none;
+    width: 100%;
+  }
+
+  .concept__content_right {
+    float: none;
+    margin: 20px auto 0 auto;
+    width: 75%;
+  }
+
+  /* ---------- article ---------- */
+
+  .article__content {
+    display: block;
+  }
+
+  .article__content > li {
+    margin: 0;
+    text-align: center;
+  }
+  
+  .article__content > li:nth-child(3n) {
+    margin-bottom: 80px;
+  }
+  
+  .article__content > li:last-child {
+    margin-bottom: 0;
+  }
+
+  .article__text {
+    display: block;
+    margin: 0 auto;
+    width: 75%;
+  }
+
+  .article__mail__btn {
+    margin: 40px 0 0 0;
+  }
+
+  /* ---------- section_about ---------- */
+
+  .about__graphs {
+    display: block;
+    text-align: center;
+  }
+
+  .about__graph {
+    margin: 0 0 88px 0;
+  }
+
+  .about__graph:last-child {
+    margin-bottom: 0;
+  }
+  
+}
+
+
+/* --------------- sp_size(width=-767px) --------------- */
+
+@media screen and (max-width: 767px) {
+
+  .inner {
+    width: 97%;
+  }
+
+  /* ---------- header ---------- */
+  
+  .header__btn {
+    display: none;
+  }
+  
+  .header__hamburger {
+    float: right;
+  }
+  
+  .btn_hamburger {
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    color: #c0c0c0;
+    padding: 10px 15px;
+  }
+  
+  /* ---------- topWrapper ---------- */
+  
+  .topWrapper__inner {
+    padding: 160px 0 130px 0;
+  }
+
+  .topWrapper__title {
+    font-size: 80px;
+  }
+
+  /* ---------- section_concept ---------- */
+
+  .concept__inner {
+    padding-bottom: 25px;
+  }
+
+  .concept__content_left {
+    float: none;
+    width: 100%;
+  }
+
+  .concept__content_right {
+    float: none;
+    margin: 20px auto 0 auto;
+    width: 75%;
+  }
+
+  /* ---------- article ---------- */
+
+  .article__content {
+    display: block;
+  }
+
+  .article__content > li {
+    margin: 0;
+    text-align: center;
+  }
+  
+  .article__content > li:nth-child(3n) {
+    margin-bottom: 80px;
+  }
+  
+  .article__content > li:last-child {
+    margin-bottom: 0;
+  }
+
+  .article__text {
+    display: block;
+    margin: 0 auto;
+    width: 75%;
+  }
+
+  .article__mail__btn {
+    margin: 40px 0 0 0;
+  }
+
+  /* ---------- section_about ---------- */
+
+  .about__graphs {
+    display: block;
+    text-align: center;
+  }
+
+  .about__graph {
+    margin: 0 0 88px 0;
+  }
+
+  .about__graph:last-child {
+    margin-bottom: 0;
+  }
+    
+  /* ---------- nav ---------- */
+
+  .nav__inner {
+    padding: 50px 0;
+  }
+
+  .nav__icons {
+    display: block;
+  }
+
+  .nav__btn {
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+  }
 }
