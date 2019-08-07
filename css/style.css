@@ -35,10 +35,6 @@ img {
   transition: background-color .3s;
 }
 
-.btn_mintgreen:hover {
-  color: #333;
-}
-
 /* ---------- header ---------- */
 
 .header {
@@ -288,6 +284,10 @@ img {
   .content__img_hover:hover {
     opacity: 1;
   }
+
+  .btn_mintgreen:hover {
+    color: #333;
+  }  
   
   /* ---------- nav ---------- */
 
